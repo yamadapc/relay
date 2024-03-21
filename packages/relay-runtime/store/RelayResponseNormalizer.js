@@ -516,9 +516,11 @@ class RelayResponseNormalizer {
               false,
               'RelayResponseNormalizer: Payload did not contain a value ' +
                 'for field `%s: %s`. Check that you are parsing with the same ' +
-                'query that was used to fetch the payload.',
+                'query that was used to fetch the payload. record=%s data=%s',
               responseKey,
               storageKey,
+              JSON.stringify(record),
+              JSON.stringify(data),
             );
           }
           return;
@@ -609,9 +611,11 @@ class RelayResponseNormalizer {
               false,
               'RelayResponseNormalizer: Payload did not contain a value ' +
                 'for field `%s: %s`. Check that you are parsing with the same ' +
-                'query that was used to fetch the payload.',
+                'query that was used to fetch the payload. record=%s data=%s',
               responseKey,
               storageKey,
+              JSON.stringify(record),
+              JSON.stringify(data),
             );
           }
           return;
